@@ -14,6 +14,13 @@ fn main() {
 
     // This consumes the `args` vector to iterate through each String
     for arg in args {
+        if arg == 'sum' {
+            sum()
+        } else if arg == 'double' {
+            double();
+        } else {
+            count(arg);
+        }
         // 1a. Your task: handle the command-line arguments!
         //
         // - If arg is "sum", then call the sum() function
